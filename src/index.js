@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import MachineStatus from './components/MachineStatus';
 import Machine2 from './components/Machine2';
+import Navbar from './components/Navbar';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
@@ -14,6 +15,7 @@ root.render(
   <StrictMode>
   <ChakraProvider>
     <ColorModeScript />
+    <Navbar />
     <MachineStatus />
   </ChakraProvider>
   </StrictMode>
