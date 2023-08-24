@@ -1,4 +1,4 @@
-import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
+import { ChakraProvider, ColorModeScript, Divider } from '@chakra-ui/react';
 import React, { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import App from './App';
@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import MachineStatus from './components/MachineStatus';
 import Machine2 from './components/Machine2';
 import Navbar from './components/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
@@ -15,7 +16,7 @@ root.render(
   <StrictMode>
   <ChakraProvider>
     <ColorModeScript />
-    <Navbar />
+    <Divider />
     <MachineStatus />
   </ChakraProvider>
   </StrictMode>
